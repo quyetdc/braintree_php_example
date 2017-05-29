@@ -1,3 +1,9 @@
 label {
     margin-top: -3px;
 }
+
+.nonce .content .icon img{
+    display: inline-block;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}

@@ -60,6 +60,18 @@
 
     <article class="content compact">
         <section>
+            <h5>Nonce</h5>
+            <table cellpadding="0" cellspacing="0">
+                <tbody>
+                    <tr>
+                        <td>payment method nonce</td>
+                        <td><?php echo($nonce)?></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
             <h5>Transaction</h5>
             <table cellpadding="0" cellspacing="0">
                 <tbody>
