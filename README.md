@@ -25,6 +25,14 @@ In this project I added a new simple page to get `payment-method-nonce` key, whi
 5. Enter a sandbox braintree creditcard, ex: `4111 1111 1111 1111` and expired date in future, ex: `02/20`, the page will redirect you to a new page to have Braintree `payment_method_nonce`. Please note that the `nonce` can be used only once.
 
 6. In case you want to demonstrate how transaction success, not to get payment method nonce, please look at the file `public_html/index.php` and change this line
+```
+<form method="post" id="payment-form" action="/get_nonce.php">
+```
+
+to this
+```
+<form method="post" id="payment-form" action="/checkout.php">
+```
 
 ## Braintree
 
