@@ -3,6 +3,9 @@
 An example Braintree integration for PHP.
 In this project I added a new simple page to get `payment-method-nonce` key, which is just generated, not used, for API testing purpose
 
+## Demo link
+
+https://braintree-php-nonce.herokuapp.com/
 
 ## Setup Instructions
 
