@@ -19,10 +19,18 @@ In this project I added a new simple page to get `payment-method-nonce` key, whi
 4. Start the internal PHP server on port 3000:
 
   ```sh
-  php -S localhost:3000 -t public_html
+  php -S localhost:8888 -t public_html
   ```
   
+ Then on your `localhost:8888` you will have this
+ ![Enter card screen](https://github.com/quyetdc/braintree_php_example/blob/master/images/braintree-enter-card.png)
+  
 5. Enter a sandbox braintree creditcard, ex: `4111 1111 1111 1111` and expired date in future, ex: `02/20`, the page will redirect you to a new page to have Braintree `payment_method_nonce`. Please note that the `nonce` can be used only once.
+
+Like in this image
+
+ ![Generated Payment Method Nonce](https://github.com/quyetdc/braintree_php_example/blob/master/images/get-nonce.png)
+  
 
 6. In case you want to demonstrate how transaction success, not to get payment method nonce, please look at the file `public_html/index.php` and change this line
 ```
@@ -33,6 +41,12 @@ to this
 ```
 <form method="post" id="payment-form" action="/checkout.php">
 ```
+
+Then after entering card detail, you will see the transaction detail, like in this image
+
+ ![Normal transaction](https://github.com/quyetdc/braintree_php_example/blob/master/images/braintree-transaction.png)
+  
+
 
 ## Braintree
 
