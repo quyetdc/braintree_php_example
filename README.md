@@ -65,7 +65,7 @@ Then after entering card detail, you will see the transaction detail, like in th
 
 3. You will need to gain your Braintree API credentials, including `public_key`, `private_key`, `merchant_id`. These credentials are needed for your `.env` file, or somewhere in your `config/env/configs.php` in a my current Laravel project
 
-4. (optional) If your API configure different Merchant Account ID for different Currency, you will need access to your Braintree sandbox `Settings` (most top left navigation option) and then `Processing`. In this page you will see a place to setup new Merchant Account ID. Please make sure that the Merchant Account Id is correct to what you have on sandbox if you set it to `Braintree\Transaction::sale`
+4. If your API configure different Merchant Account ID for different Currency, you will need access to your Braintree sandbox `Settings` (most top left navigation option) and then `Processing`. In this page you will see a place to setup new Merchant Account ID. Please make sure that the Merchant Account Id is correct to what you have on sandbox if you set it to `Braintree\Transaction::sale`
 
 *Good luck*
 
